@@ -1,0 +1,131 @@
+body,span,p,ul,li,a,h1{
+	margin:0;
+	padding:0;
+	font-family:'Î¢ÈíÑÅºÚ';
+	-webKit-user-select:none;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+/* all	S */
+#header{
+	position:fixed;
+	width:100%;
+	height:65px;
+	background-color:#E9EBEE;
+	top:0;
+	left:0;
+	z-index:10;
+	box-shadow:0 1px 2px 1px rgba(200,200,200,0.8);
+}
+#header .nav{
+	max-width:1100px;
+	width:90%;
+	height:100%;
+	margin:0 auto;
+}
+#header .nav .n-logo{
+	width:132px;
+	height:32px;
+	float:left;
+	margin:14px;
+}
+/*tit1 S*/
+#header .nav .tit1{
+	float:right;
+}
+#header .nav .tit1 li{
+	float:left;
+}
+#header .nav .tit1 li a{
+	display:inline-block;
+	padding:25px 40px;
+	font-size:16px ;
+	color:#000;
+}
+#header .nav .tit li a.on{
+	color:#ADC38A;
+	font-size:14px;
+}
+#header .nav .tit li a:hover{
+	color:#ADC38A;
+	cursor:pointer;
+}
+/*E tit2*/
+#header .nav .tit2{
+	display:none;
+}
+/* E all */
+/* 0-1200px S*/
+@media screen and (max-width:1200px){
+	#header .nav .tit{
+		float:left;
+	}
+	#header .nav  .tit1 li a{
+		padding:23px 20px;
+	}
+}
+/*E 0-1200px*/
+/* 0-900px S*/
+@media screen and (max-width:900px){
+	#header{
+		height:100px;
+		background-color:#fff;
+	}
+	#header .nav .n-logo{
+		float:none;
+		margin:14px auto;
+	}
+	#header .nav .tit{
+		float:none;
+	}
+	#header .nav .tit1{
+		display:none;
+	}
+	#header .nav .tit2{
+		display:block;
+		width:480px;
+		height:30px;
+		position:static;
+		margin:0 auto;
+	}
+	#header .nav .tit2 li{
+		float:left;
+		font-size:14px;
+		
+	}
+	#header .nav .tit2 li a{
+		display:inline-block;
+		margin:8px 30px;
+		color:#000;
+	}
+	#header .nav .tit2 li>.duo{
+		display:block;
+		margin:8px 30px;
+	}
+	#header .nav .tit2 li .duo img{
+		display:block;
+		width:14px;
+		height:14px;
+		margin-top:-14px;
+		margin-left:24px;
+	}
+	#header .nav .tit2 .d-list{
+		box-shadow:0 0 2px 1px #333;
+		border-radius:5px;
+		display:none;
+	}
+	#header .nav .tit2 .d-list a{
+		display:block;
+		padding:6px 0;
+	}
+}
+/*E 0-900px*/
+/* 0-600px S*/
+@media screen and (max-width:600px){
+
+}
+/*E 0-600px*/
